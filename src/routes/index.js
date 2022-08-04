@@ -26,6 +26,18 @@ export default function AppRoutes() {
           path="gif-api"
           element={<Gifs />}
         />
+        <Route
+          path="gmae-dados"
+          element={<Gifs />}
+        />
+        <Route
+          path="game-number"
+          element={<Gifs />}
+        />
+        <Route
+          path="app-bank"
+          element={<Gifs />}
+        />
       </Route>
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
