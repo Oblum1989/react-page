@@ -5,8 +5,11 @@ import Apps from "../pages/Apps";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import ToDo from "../pages/Apps/ToDo";
-import Pokemons from "../pages/Apps/Pokemos";
+import Pokemons from "../pages/Apps/Pokemons";
 import Gifs from "../pages/Apps/Gifs";
+import Dices from "../pages/Apps/Dices";
+import Numbers from "../pages/Apps/Numbers";
+import Bankist from "../pages/Apps/Bankist";
 
 export default function AppRoutes() {
   return (
@@ -27,16 +30,16 @@ export default function AppRoutes() {
           element={<Gifs />}
         />
         <Route
-          path="gmae-dados"
-          element={<Gifs />}
+          path="game-dados"
+          element={<Dices />}
         />
         <Route
           path="game-number"
-          element={<Gifs />}
+          element={<Numbers />}
         />
         <Route
           path="app-bank"
-          element={<Gifs />}
+          element={<Bankist />}
         />
       </Route>
       <Route path="/about" element={<About />} />
