@@ -1,5 +1,7 @@
 import "./styles.css";
-const Balance = () => {
+const Balance = ({account}) => {
+  account.balance = account.movements.reduce((prev, curr) => prev + curr, 0);
+
   return (
     <div className="balance">
       <div>
@@ -8,7 +10,7 @@ const Balance = () => {
           As of <span className="date">05/03/2037</span>
         </p>
       </div>
-      <p className="balance__value">0000€</p>
+      <p className="balance__value">{`${account.balance.toFixed(2)}$`}</p>
     </div>
   );
 };

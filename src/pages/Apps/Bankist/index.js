@@ -5,18 +5,21 @@ import Movements from "./components/Movements";
 import NavBar from "./components/NavBar";
 import Summary from "./components/Summary";
 import Transfer from "./components/Transfer";
-import "./styles.css"
+import "./styles.css";
+import {accounts, account1} from "./accounts"
 
 const Bankist = () => {
+  const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
   return (
     <>
       <NavBar />
       <main className="app">
-        <Balance />
+        <Balance account={account1}/>
 
-        <Movements />
+        <Movements movements={movements} />
 
-        <Summary />
+        <Summary account={account1} />
 
         <Transfer />
 
