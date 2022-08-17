@@ -7,7 +7,7 @@ const Movements = ({ movements }) => {
         movements.map((movement, index) => {
           const movType = movement > 0 ? "deposit" : "withdrawal"
           return(
-            <div className="movements__row">
+            <div key={index} className="movements__row">
               <div className={`movements__type movements__type--${movType}`}>
                 {`${index + 1} ${movType}`}
               </div>
