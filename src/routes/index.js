@@ -10,6 +10,7 @@ import Gifs from "../pages/Apps/Gifs";
 import Dices from "../pages/Apps/Dices";
 import Numbers from "../pages/Apps/Numbers";
 import Bankist from "../pages/Apps/Bankist";
+import Ecommerce from "../pages/Apps/Ecommerce";
 
 export default function AppRoutes() {
   return (
@@ -40,6 +41,10 @@ export default function AppRoutes() {
         <Route
           path="app-bank"
           element={<Bankist />}
+        />
+        <Route
+          path="ecommerce"
+          element={<Ecommerce />}
         />
       </Route>
       <Route path="/about" element={<About />} />

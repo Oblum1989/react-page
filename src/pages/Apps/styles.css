@@ -1,0 +1,24 @@
+.container-apps{
+  display: flex;
+}
+
+.container-apps .sidebar-apps{
+  background-color: beige;
+}
+
+.container-apps .sidebar-apps ul{
+  list-style: none;
+  padding: 0;
+}
+.container-apps .sidebar-apps ul li{
+  border: 1px solid #b0b8bb;
+  width: 4rem;
+  height: 4rem;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-apps .sidebar-apps ul li svg{
+  height: 2rem
+}

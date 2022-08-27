@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const StyledNavbar = styled.footer`
+const StyledNavbar = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: black;
