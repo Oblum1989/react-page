@@ -39,6 +39,7 @@ const Navbar = () => {
         <div className="action"><NavLink to="/apps">APPS</NavLink></div>
         <div className="action"><NavLink to="/about">ACERCA DE</NavLink></div>
         <div className="action"><NavLink to="/contact">CONTACTO</NavLink></div>
+        <div className="action"><NavLink to="/sign-in">SIGN IN</NavLink></div>
       </StyledActions>
     </StyledNavbar>
   );
