@@ -11,7 +11,7 @@ import Dices from "../pages/Apps/Dices";
 import Numbers from "../pages/Apps/Numbers";
 import Bankist from "../pages/Apps/Bankist";
 import Ecommerce from "../pages/Apps/Ecommerce";
-import SignIn from "../pages/SignIn";
+import Authentication from "../pages/Authentication";
 
 export default function AppRoutes() {
   return (
@@ -50,7 +50,7 @@ export default function AppRoutes() {
       </Route>
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/sign-in" element={<SignIn />} />
+      <Route path="/auth" element={<Authentication />} />
       <Route
         path="*"
         element={
